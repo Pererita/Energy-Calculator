@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axie Energy</title>
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator__energy">
+            <div class="round__container">
+                <div class="round__info">
+                    <span>Ronda&nbsp;</span>
+                    <span id="roundNumber">1</span>
+                </div>
+
+                <div class="energy__quantify">
+                    <div class="circle"></div>
+                    <span>
+                        <b id="actualEnergy" class="actual-energy">3</b>
+                        <b class="energy-divider">/</b>
+                        <b id="maxEnergy" class="max-energy">10</b>
+                    </span>
+                </div>
+            </div>
+
+            <div class="ene-gain-loss-container">
+                <div class="energy-tools">
+                    <button onclick="subtract()"><i class="fas fa-minus"></i>&nbsp;1 Energía</button>
+                    <button onclick="add()"><i class="fas fa-plus"></i>&nbsp;1 Energía</button>
+                </div>
+
+                <div class="energy-tools">
+                    <button id="nextRound" onclick="nextRound()">Siguiente Ronda</button>
+                    <button id="newArena" onclick="reset()">Nueva Partida</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
