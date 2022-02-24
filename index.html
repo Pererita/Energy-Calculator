@@ -1,91 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Axie Energy</title>
 
     <!--Icons-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <!-- CDN Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!--Stylesheets-->
     <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header__content">
-        <div class="animate__animated animate__bounceInDown header__container">
+      <div class="animate__animated animate__bounceInDown header__container">
         <h1 class="title">Contador de Energía</h1>
-    </div>
+      </div>
     </header>
 
     <section class="container">
-        <div class="calculator__energy">
-            <div class="round__container">
-                <div class="round__info">
-                    <span>Ronda&nbsp;</span>
-                    <span id="roundNumber">1</span>
-                    <div class="line"></div>
-                </div>
+      <div class="calculator__energy">
+        <div class="round__container">
+          <div class="round__info">
+            <span>Ronda&nbsp;</span>
+            <span id="roundNumber">1</span>
+            <div class="line"></div>
+          </div>
 
-                <div class="energy__quantify">
-                    <span>
-                        <b id="actualEnergy" class="actual-energy">3</b>
-                        <b class="energy-divider">/</b>
-                        <b id="maxEnergy" class="max-energy">10</b>
-                    </span>
-                </div>
-            </div>
-
-            <div class="btns__tools">
-                <div class="energy__tools">
-                    <button onclick="subtract()" class="btn">
-                        <i class="uil uil-minus btn__icon"></i>&nbsp;1 Energía
-                    </button>
-                    <button onclick="add()" class="btn">
-                        <i class="uil uil-plus btn__icon"></i>&nbsp;1 Energía
-                    </button>
-                    <button id="nextRound" onclick="nextRound()" class="btn">
-                        Siguiente Ronda
-                    </button>
-                    <button id="newArena" onclick="reset()" class="btn">
-                        Nueva Partida
-                    </button>
-                </div>
-            </div>
+          <div class="energy__quantify">
+            <span>
+              <b id="actualEnergy" class="actual-energy">3</b>
+              <b class="energy-divider">/</b>
+              <b id="maxEnergy" class="max-energy">10</b>
+            </span>
+          </div>
         </div>
+
+        <div class="btns__tools">
+          <div class="energy__tools">
+            <button onclick="subtract()" class="btn">
+              <i class="uil uil-minus btn__icon"></i>&nbsp;1 Energía
+            </button>
+            <button onclick="add()" class="btn">
+              <i class="uil uil-plus btn__icon"></i>&nbsp;1 Energía
+            </button>
+            <button id="nextRound" onclick="nextRound()" class="btn">
+              Siguiente Ronda
+            </button>
+            <button id="newArena" onclick="reset()" class="btn">
+              Nueva Partida
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="footer__content">
-        <div class="footer__social">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/pererita/" target="_blank">
-                        <i class="uil uil-linkedin-alt icon"></i>
-                    </a></li>
+      <div class="footer__social">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/pererita/" target="_blank">
+              <i class="uil uil-linkedin-alt icon"></i>
+            </a>
+          </li>
 
-                <li><a href="https://github.com/Pererita" target="_blank">
-                        <i class="uil uil-github-alt"></i>
-                    </a></li>
+          <li>
+            <a href="https://github.com/Pererita" target="_blank">
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </li>
 
-                <li><a href="https://www.facebook.com/Pereritaa" target="_blank">
-                        <i class="uil uil-facebook-f"></i>
-                    </a></li>
+          <li>
+            <a href="https://www.facebook.com/Pereritaa" target="_blank">
+              <i class="uil uil-facebook-f"></i>
+            </a>
+          </li>
 
-                <li><a href="https://www.instagram.com/pereritaa/" target="_blank">
-                        <i class="uil uil-instagram"></i>
-                    </a></li>
-                <li><a href="https://t.me/Pererita" target="_blank">
-                        <i class="uil uil-telegram-alt"></i>
-                    </a></li>
-            </ul>
-        </div>
+          <li>
+            <a href="https://www.instagram.com/pereritaa/" target="_blank">
+              <i class="uil uil-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/Pererita" target="_blank">
+              <i class="uil uil-telegram-alt"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
     <!--Scripts-->
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
