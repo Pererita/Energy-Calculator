@@ -197,4 +197,7 @@ span {
   span {
     font-size: 1.5em;
   }
+  .footer__social ul {
+    top: 95%;
+  }
 }
