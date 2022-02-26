@@ -172,6 +172,13 @@ span {
   background-color: #55acee;
 }
 
+.footer__copy {
+  text-align: center;
+  font-size: 1rem;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
 /* Respondive */
 
 @media (max-width: 400px) {
@@ -199,5 +206,8 @@ span {
   }
   .footer__social ul {
     top: 95%;
+  }
+  .footer__copy {
+    font-size: .75rem;
   }
 }
